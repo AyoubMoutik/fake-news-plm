@@ -1,0 +1,29 @@
+{
+  "A_baseline": {
+    "accuracy": 0.9550597108736644,
+    "f1": 0.9589434395635946,
+    "train_time_seconds": 52.1122641999973,
+    "approach": "A - TF-IDF + Logistic Regression"
+  },
+  "B_frozen_plm": {
+    "accuracy": 0.9453174104336896,
+    "f1": 0.9502145922746781,
+    "train_embedding_extraction_time_seconds": 175.80708439997397,
+    "approach": "B - Frozen DistilBERT (feature extractor) + Logistic Regression",
+    "peak_gpu_memory_mb": 576.83203125
+  },
+  "C_finetuned_plm": {
+    "accuracy": 0.9938717787554997,
+    "f1": 0.9943957465153039,
+    "train_time_seconds": 880.7212863999885,
+    "approach": "C - Fine-tuned DistilBERT (HF Trainer)",
+    "peak_gpu_memory_mb": 1718.56982421875
+  },
+  "Bonus_llm_prompted": {
+    "accuracy": 0.835,
+    "f1": 0.8674698795180723,
+    "api_call_time_seconds": 3036.664886499988,
+    "n_examples": 200,
+    "approach": "Bonus - gemini-flash-lite-latest few-shot prompting"
+  }
+}

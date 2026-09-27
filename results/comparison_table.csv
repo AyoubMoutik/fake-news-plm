@@ -1,0 +1,5 @@
+approach,accuracy,f1,time_seconds,peak_gpu_memory_mb
+A - TF-IDF + Logistic Regression,0.9551,0.9589,52.11,
+B - Frozen DistilBERT (feature extractor) + Logistic Regression,0.9453,0.9502,175.81,576.8
+C - Fine-tuned DistilBERT (HF Trainer),0.9939,0.9944,880.72,1718.6
+Bonus - gemini-flash-lite-latest few-shot prompting,0.835,0.8675,3036.66,
